@@ -1,0 +1,24 @@
+* {
+   margin: 0;
+   padding: 0; 
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(37, 34, 34);
+}
+/*navbar*/
+nav{
+    display: flex;
+    background-color: aliceblue;
+    padding: 20px;
+    justify-content: space-around;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul li{
+    display: 
+}
