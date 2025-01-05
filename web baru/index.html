@@ -16,31 +16,55 @@
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet" />
+    <!--Feather icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--style-->
     <link rel="stylesheet" href="../css/index.css" />
+
     <title>portofolio-ikhsan ferdiansyah</title>
   </head>
   <body>
-    <nav>
-      <div id="logo" class="logo">
-        <div class="judul1"><a href="">My Profile</a></div>
-        <div class="menu">
-          <ul>
-            <li><a href="#logo">Home</a></li>
-            <li><a href="#about">Profile</a></li>
-            <li><a href="#Skill">Skill</a></li>
-            <li><a href="Contact">Contact</a></li>
-          </ul>
-        </div>
+    <!--navbar start-->
+    <nav
+      class="navbar"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="500">
+      <a href="#" class="navbar-logo">Ikhsan <span>Ferdiansyah</span></a>
+
+      <div class="navbar-nav">
+        <ul>
+          <li><a href="#kelaz">Home</a></li>
+          <li><a href="#about">Tentang saya</a></li>
+          <li><a href="#project">Skill</a></li>
+          <li><a href="#super">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-ekstra">
+        <a href="https://www.instagram.com/xavyy_7/" id="instagram">
+          <i data-feather="instagram"></i
+        ></a>
+        <a href="#" id="hamburger-menu"> <i data-feather="align-left"></i></a>
       </div>
     </nav>
+    <!--navbar end-->
 
     <!--jumbotron-->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="kelaz">
       <img
         src="../img/full/profile1.jpg"
         alt="ikhsan ferdiansyah"
         width="200"
-        class="rounded-circle" />
+        class="rounded-circle"
+        data-aos="zoom-in" />
       <h1 class="display-4">Ikhsan ferdiansyah</h1>
       <p class="lead">Selamat datang di Profile saya</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -65,10 +89,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col align-items-center">
+          <div
+            class="col align-items-center"
+            data-aos="fade-right"
+            data-aos-offset="400">
             <img src="../img/full/gerbangbrebes2.jpg" alt="Kabupaten Brebes" />
           </div>
-          <div class="col">
+          <div class="col" data-aos="fade-left" data-aos-offset="400">
             <p>Saya lahir di Kabupaten Brebes, Jawa Tengah</p>
             <p>
               Kabupaten Brebes adalah salah satu kabupaten yang terletak di
@@ -78,11 +105,11 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col1">
+        <div class="row" data-aos="fade-down" data-aos-offset="400">
+          <div class="col justify-content-center d-flex mt-3 mb-3">
             <img src="../img/full/gambar1.jpg" alt="Kabupaten Brebes" />
           </div>
-          <div class="col">
+          <div class="col1-md-4">
             <p>SMK LARENDA BULAKAMBA</p>
             <p>
               Saya berasal dari SMK LARENDA BULAKAMBA, SMK Larenda Bulakamba
@@ -101,15 +128,15 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#faebd7"
+          fill="#c6a375"
           fill-opacity="1"
-          d="M0,320L8.6,309.3C17.1,299,34,277,51,272C68.6,267,86,277,103,245.3C120,213,137,139,154,112C171.4,85,189,107,206,144C222.9,181,240,235,257,213.3C274.3,192,291,96,309,69.3C325.7,43,343,85,360,96C377.1,107,394,85,411,64C428.6,43,446,21,463,21.3C480,21,497,43,514,80C531.4,117,549,171,566,170.7C582.9,171,600,117,617,80C634.3,43,651,21,669,10.7C685.7,0,703,0,720,42.7C737.1,85,754,171,771,176C788.6,181,806,107,823,69.3C840,32,857,32,874,53.3C891.4,75,909,117,926,149.3C942.9,181,960,203,977,208C994.3,213,1011,203,1029,181.3C1045.7,160,1063,128,1080,101.3C1097.1,75,1114,53,1131,42.7C1148.6,32,1166,32,1183,48C1200,64,1217,96,1234,138.7C1251.4,181,1269,235,1286,229.3C1302.9,224,1320,160,1337,128C1354.3,96,1371,96,1389,101.3C1405.7,107,1423,117,1431,122.7L1440,128L1440,320L1431.4,320C1422.9,320,1406,320,1389,320C1371.4,320,1354,320,1337,320C1320,320,1303,320,1286,320C1268.6,320,1251,320,1234,320C1217.1,320,1200,320,1183,320C1165.7,320,1149,320,1131,320C1114.3,320,1097,320,1080,320C1062.9,320,1046,320,1029,320C1011.4,320,994,320,977,320C960,320,943,320,926,320C908.6,320,891,320,874,320C857.1,320,840,320,823,320C805.7,320,789,320,771,320C754.3,320,737,320,720,320C702.9,320,686,320,669,320C651.4,320,634,320,617,320C600,320,583,320,566,320C548.6,320,531,320,514,320C497.1,320,480,320,463,320C445.7,320,429,320,411,320C394.3,320,377,320,360,320C342.9,320,326,320,309,320C291.4,320,274,320,257,320C240,320,223,320,206,320C188.6,320,171,320,154,320C137.1,320,120,320,103,320C85.7,320,69,320,51,320C34.3,320,17,320,9,320L0,320Z"></path>
+          d="M0,0L9.6,37.3C19.2,75,38,149,58,192C76.8,235,96,245,115,213.3C134.4,181,154,107,173,64C192,21,211,11,230,21.3C249.6,32,269,64,288,96C307.2,128,326,160,346,176C364.8,192,384,192,403,165.3C422.4,139,442,85,461,80C480,75,499,117,518,133.3C537.6,149,557,139,576,160C595.2,181,614,235,634,240C652.8,245,672,203,691,197.3C710.4,192,730,224,749,213.3C768,203,787,149,806,128C825.6,107,845,117,864,112C883.2,107,902,85,922,69.3C940.8,53,960,43,979,64C998.4,85,1018,139,1037,165.3C1056,192,1075,192,1094,165.3C1113.6,139,1133,85,1152,53.3C1171.2,21,1190,11,1210,42.7C1228.8,75,1248,149,1267,165.3C1286.4,181,1306,139,1325,122.7C1344,107,1363,117,1382,106.7C1401.6,96,1421,64,1430,48L1440,32L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
       </svg>
     </section>
     <!--about end section-->
 
     <!--Skill section-->
-    <section id="skill">
+    <section id="project">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -117,65 +144,197 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
-            <div class="card">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-offset="400"
+              data-aos-duration="1000">
               <img
                 src="../img/thumbnai/otdr.jpg"
                 class="card-img-top"
                 alt="skill" />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Mampu untuk menggunakan OTDR (Optical Time Domain
+                  Reflectometer) untuk mengecek arus daya internet dan melihat
+                  jarak kabel optic putus.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="flip-right"
+              data-aos-offset="400"
+              data-aos-duration="1000">
               <img
                 src="../img/thumbnai/gambar-CSS.jpg"
                 class="card-img-top"
                 alt="skill" />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Terampil dalam menggunakan CSS (Cascading Style Sheets) dalam
+                  membentuk dan mendesign sebuah web.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-offset="400"
+              data-aos-duration="1000">
               <img
-                src="../img/thumbnai/Logo-Javascript.png"
+                src="../img/thumbnai/fusion-splicer.png"
                 class="card-img-top"
                 alt="skill" />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Mampu menggunakan Spliser untuk menyambung fiber optic dalam
+                  keadaan putus atau rusak.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="flip-up"
+              data-aos-offset="400"
+              data-aos-duration="1000">
               <img
-                src="../img/thumbnai/routing.jpg"
+                src="../img/thumbnai/gambar opm.jpg"
                 class="card-img-top"
                 alt="skill" />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Bisa menganalisa redaman fiber optic yang bagus dan tidak.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="flip-down"
+              data-aos-offset="400"
+              data-aos-duration="1000">
+              <img
+                src="../img/thumbnai/gambar di tiang.jpg"
+                class="card-img-top"
+                alt="skill" />
+              <div class="card-body">
+                <p class="card-text">
+                  Mampu memperbaiki gangguan jaringan pada setiap client server.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="flip-up"
+              data-aos-offset="400"
+              data-aos-duration="1000">
+              <img
+                src="../img/thumbnai/gambar iksandika.jpg"
+                class="card-img-top"
+                alt="skill" />
+              <div class="card-body">
+                <p class="card-text">
+                  Mampu bekerja secara berkelompok maupun individu dalam
+                  menyelesaikan masalah pada gangguan jaringan.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,0L9.6,37.3C19.2,75,38,149,58,192C76.8,235,96,245,115,213.3C134.4,181,154,107,173,64C192,21,211,11,230,21.3C249.6,32,269,64,288,96C307.2,128,326,160,346,176C364.8,192,384,192,403,165.3C422.4,139,442,85,461,80C480,75,499,117,518,133.3C537.6,149,557,139,576,160C595.2,181,614,235,634,240C652.8,245,672,203,691,197.3C710.4,192,730,224,749,213.3C768,203,787,149,806,128C825.6,107,845,117,864,112C883.2,107,902,85,922,69.3C940.8,53,960,43,979,64C998.4,85,1018,139,1037,165.3C1056,192,1075,192,1094,165.3C1113.6,139,1133,85,1152,53.3C1171.2,21,1190,11,1210,42.7C1228.8,75,1248,149,1267,165.3C1286.4,181,1306,139,1325,122.7C1344,107,1363,117,1382,106.7C1401.6,96,1421,64,1430,48L1440,32L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
+      </svg>
     </section>
     <!--Skill end section-->
+
+    <!--Contact-->
+    <section id="super">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col mt-3">
+            <h2>Contact me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="Name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Akhir Contact-->
+
+    <!--Footer-->
+    <footer id="footer" class="bg-primary text-white text-center">
+      <p>
+        Create with love by
+        <a href="https://www.instagram.com/xavyy_7/" class="text-white fw-bold"
+          >Ikhsan Ferdiansyah</a
+        >
+      </p>
+    </footer>
+
+    <!--Akhir Footer-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script>
+      gsap.from(".jumbotron img", {
+        duration: 1,
+        y: -400,
+        rotateY: 360,
+      });
+      gsap.from(".navbar", {
+        duration: 1.5,
+        ease: "bounce",
+      });
+    </script>
+    <!--feather icon-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--my javascript-->
+    <script src="js/script.js"></script>
   </body>
 </html>
